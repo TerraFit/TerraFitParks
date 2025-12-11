@@ -18,10 +18,10 @@ const financialModels = [
     metrics: {
       capacity: "30 guests/session",
       sessions: "6-8 per day",
-      avgTicket: "R180",
-      dailyRevenue: "R32,400 - R43,200",
-      annualRevenue: "R3.2M - R10.8M",
-      breakeven: "12-18 months"
+      avgTicket: "R100",
+      dailyRevenue: "R18,000 - R24,000",
+      annualRevenue: "R1.6M - R6.0M",
+      breakeven: "20-36 months"
     }
   },
   {
