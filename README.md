@@ -1,2 +1,2 @@
-# TerraFitParks
-Treetop and Adrenaline Adventure Park Project
+npm install
+npm run dev
