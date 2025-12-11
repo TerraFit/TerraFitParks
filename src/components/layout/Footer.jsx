@@ -110,7 +110,16 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} TerraFit Parks. An Aemara Group Company. All rights reserved.
+            © {new Date().getFullYear()} TerraFit Parks. An Aemara Group Company. All rights reserved. | A{" "}
+            <a 
+              href="https://www.terrafit-trail.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#559e2a] hover:text-[#7ac142] transition-colors font-medium"
+            >
+              TerraFit Trail
+            </a>{" "}
+            company.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-500 hover:text-gray-300 text-sm transition-colors">Privacy Policy</a>
