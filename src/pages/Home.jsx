@@ -135,6 +135,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NEW: YouTube Video Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="text-[#559e2a] font-semibold text-sm uppercase tracking-wider">Watch</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-4">
+              See TerraFit Parks in Action
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Watch how we develop, build, and operate world-class treetop and adrenaline parks across Africa
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/aC6YsuCpkfI"
+              title="TerraFit Parks - Africa's Premier Adventure Park Provider"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </motion.div>
+
+          {/* Optional: Stats/CTA under video */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="flex justify-center gap-8 mt-12 text-center"
+          >
+            <div>
+              <div className="text-2xl font-bold text-[#559e2a]">4</div>
+              <div className="text-sm text-gray-500">Countries</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-[#559e2a]">50+</div>
+              <div className="text-sm text-gray-500">Parks Built</div>
+            </div>
+            <div>
+              <div className="text-2xl font-bold text-[#559e2a]">100K+</div>
+              <div className="text-sm text-gray-500">Annual Visitors</div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <CTASection />
     </div>
   );
